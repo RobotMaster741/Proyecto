@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="JS/funciones.js" async></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Style-footer.css">
+    <link rel="stylesheet" href="CSS/Style-header.css">
+    <title>Document</title>
+</head>
+<header>
+    <nav class="py-3 navbar navbar-dark bg-caution navbar-expand-md">
+      <div class="container">
+        <div class="icon">
+          <a class="navbar-brand" href="">
+            <a href="index.html"><img src="img/logo.png" width="75" height="75" alt="">PetsCo.</a>
+        </div>
+  
+        <div class="d-none d-lg-block">
+          <form class="search_box">
+            <input type="search" placeholder="Buscar">
+            <span class="fa fa-search"></span>
+          </form>
+          </div>
+  
+        <button data-bs-toggle="collapse" data-bs-target="#main-menu" type="button" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>  
+        </button>
+        
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="bandanas.html">Bandanas</a></li>
+            <li class="nav-item"><a class="nav-link" href="juguetes.html">Jueguetes</a></li>
+            <li class="nav-item"><a class="nav-link" href="correas.html">Correas</a></li>
+            <li class="nav-item"><a class="nav-link" href="identificadores.html">Identificadores</a></li>
+            <li class="nav-item"><button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="fa fa-cart-shopping"></span></button>
+  
+              
+          </ul> 
+        </div>
+      </div>
+    </nav>
+  </header>
+<body>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="carrito">
+            <div class="header-carrito">
+              <h2>Tu carrito</h2>
+            </div>
+            <div class="carrito-items">
+             <!--  
+              <div class="carrito-item">
+                <img src="IMG/plano.jpg" alt="">
+                <div class="carrito-item-detalles">
+                  <span class="carrito-item-titulo">Bandana color simple</span>
+                  <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                  </div>
+                  <span class="carrito-item-precio">$15.000</span>
+                </div>
+                <span class="btn-eliminar">
+                  <i class="fa-solid fa-trash"></i>
+                </span>
+              </div>
+              <div class="carrito-item">
+                <img src="IMG/rec___327.jpg" alt="">
+                <div class="carrito-item-detalles">
+                  <span class="carrito-item-titulo">Bandana diseño cuadriculado</span>
+                  <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                  </div>
+                  <span class="carrito-item-precio">$30.000</span>
+                </div>
+                <span class="btn-eliminar">
+                  <i class="fa-solid fa-trash"></i>
+                </span>
+              </div>
+             -->
+            </div>
+            <div class="carrito-total">
+              <div class="fila">
+                <strong>Tu total</strong>
+                <span class="carrito-precio-total">
+                  $0,00
+                </span>
+              </div>
+              <button class="btn-pagar">Continuar con el pago <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="encabezado">
+        <h1>Juguetes</h1>
+      <br>
+      <h3>Para regalonear a tu amigo peludo.</h3>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <div class="contenedor">
+            <div class="contenedor-items">
+              <div class="item">
+                <span class="titulo-item">Juguete chillón</span>
+                <img src="IMG/gsc_116471493_1504936_1.jpg" alt="" class="img-item">
+                <span class="precio-item">$8.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contenedor">
+            <div class="contenedor-items">
+              <div class="item">
+                <span class="titulo-item">Pelota para premios</span>
+                <img src="IMG/513N2hbLrmS.jpg" alt="" class="img-item">
+                <span class="precio-item">$5.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contenedor">
+            <div class="contenedor-items">
+              <div class="item">
+                <span class="titulo-item">Peluche de animal</span>
+                <img src="IMG/Sc8df420aadba4959a36a250d97ce0bddJ.jpg_640x640Q90.jpg_.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+</body>
+<footer class="footer">
+  <div class="left-footer">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <a href="index.html"><img src="IMG/footer.png" width="75" height="75" alt="">PetsCo.</a>
+          </div>
+          <p>
+            En PetsCo. nuestra mision es poder ayudarte a encontrar todo lo que necesites para tu peludo amigo.</p>
+            <a href=""><img src="" alt=""></a>
+          </div>            
+      </div>
+
+      <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+        <div class="footer-widget">
+          <h6>Categorias</h6>
+          <ul>
+            <li><a href="bandanas.html">Bandanas</a></li>
+            <li><a href="juguetes.html">Jueguetes</a></li>
+            <li><a href="identificadores.html">Identificadores</a></li>
+            <li><a href="correas.html">Correas</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <div class="footer-widget">
+          <h6>Links</h6>
+          <ul>
+            <li><a href="">Contacta con nosotros</a></li>
+            <li><a href="">Metodos de pago</a></li>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Reembolsos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+      <div class="footer-widget">
+          <h6>¿Quieres parte de esta peluda familia?</h6>
+          <div class="footer-newsletter">
+            <p>Se el primero en saber sobre nuevos productos, ofertas y promociones!</p>
+            <form action="#">
+              <input type="text" placeholder="Ingrese su mail">
+              <a class="button" href="registro.html"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></a>
+              <p class="acominicio">¿Ya eres parte de la familia? <a class="iniciosesion" href="iniciosesion.html">Inicia sesión</a></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="footer-copyright-text">
+          <p>Copyright &copy; 2023 All rights reserved | PetsCo. </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</html>
